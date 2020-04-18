@@ -1,0 +1,52 @@
+import java.util.Calendar;
+
+public class Person {
+    private String lastname;
+    private String firstname;
+    private String middlename;
+    private Calendar birthday;
+
+    public Person(String lastname, String firstname, String middlename, Calendar birthday) {
+        this.lastname = lastname;
+        this.firstname = firstname;
+        this.middlename = middlename;
+        this.birthday = birthday;
+    }
+
+    public String getFIO() {
+        return (this.lastname + " " + this.firstname.charAt(0) + "." + this.middlename.charAt(0) + ".");
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setMiddlename(String middlename) {
+        this.middlename = middlename;
+    }
+
+    public String getMiddlename() {
+        return middlename;
+    }
+
+    public void setBirthday(Calendar birthday) {
+        this.birthday = birthday;
+    }
+
+    public Calendar getBirthday() {
+        return birthday;
+    }
+}
+
